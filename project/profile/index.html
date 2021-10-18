@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>action menu button</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+
+</head>
+<body class="body">
+    <div class="action">
+        <div class="profile" onclick="menuToggle();">
+            <img src="profile.jpeg" width="50">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><i class="edit icon"></i><a href="viewall_copy.php"> my profile</a></li>
+                <li><i class="edit icon"></i><a href="viewall.php"> edit profile</a></li>
+                <li><i class="inbox icon"></i><a> delete</a></li>
+                <li><i class="settings icon"></i><a> settings</a></li>
+                <li><i class="logout icon"></i><a>logout</a></li>
+
+            </ul>
+
+        </div>
+    
+    </div>
+    <script>
+           function menuToggle(){
+           const toggleMenu = document.querySelector('.menu');
+           toggleMenu.classList.toggle('active')
+       }  
+    </script>
+    
+</body>
+</html>

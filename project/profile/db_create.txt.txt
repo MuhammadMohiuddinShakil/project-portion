@@ -1,0 +1,15 @@
+create database practice;
+use practice;
+
+create table Appoinment ( 
+	id INT(10) AUTO_INCREMENT, 
+	name string(50), 
+	location string(50),
+	number string(30),
+    email string(30),
+
+	PRIMARY KEY(id) 
+);
+
+insert into Appoinment values ( '', 'dr.muhammad', 'bhola','0199','shakil@');
+select * from Appoinment;
